@@ -1,0 +1,170 @@
+{
+ "format": 1,
+ "build": "20261008.1718",
+ "commit": "e435430c152a435553a220a6382961f6ad10fa05",
+ "hub": {
+  "size": 516507
+ },
+ "files": {
+  "fonts/Archivo-ExpandedBlack.ttf": {
+   "size": 121264,
+   "stamp": "a55ca833"
+  },
+  "fonts/Archivo-ExpandedBold.ttf": {
+   "size": 121668,
+   "stamp": "ffbf2077"
+  },
+  "fonts/GeistMono-Medium.ttf": {
+   "size": 101944,
+   "stamp": "8332ab04"
+  },
+  "fonts/GeistMono-Regular.ttf": {
+   "size": 101868,
+   "stamp": "c192a4ad"
+  },
+  "fonts/InstrumentSerif-Italic.ttf": {
+   "size": 71592,
+   "stamp": "cfeb4692"
+  },
+  "fonts/InstrumentSerif-Regular.ttf": {
+   "size": 70012,
+   "stamp": "760dce2e"
+  },
+  "fonts/Inter-Bold.ttf": {
+   "size": 343232,
+   "stamp": "6fe5683d"
+  },
+  "fonts/Inter-Medium.ttf": {
+   "size": 342088,
+   "stamp": "ad5bac14"
+  },
+  "fonts/Inter-Regular.ttf": {
+   "size": 341624,
+   "stamp": "ec9fcd4d"
+  },
+  "fonts/Inter-SemiBold.ttf": {
+   "size": 342732,
+   "stamp": "186e2a94"
+  },
+  "fx/bh_flight_pack.lua": {
+   "size": 128255,
+   "stamp": "d7594695"
+  },
+  "img/arrow_2978718f.png": {
+   "size": 1144,
+   "stamp": "2978718f"
+  },
+  "img/dot_88aed008.png": {
+   "size": 756,
+   "stamp": "88aed008"
+  },
+  "img/esp_box_af236fc2.png": {
+   "size": 141,
+   "stamp": "af236fc2"
+  },
+  "img/esp_corner_57de7310.png": {
+   "size": 118,
+   "stamp": "57de7310"
+  },
+  "img/glow_b92f0e11.png": {
+   "size": 9125,
+   "stamp": "b92f0e11"
+  },
+  "img/grain_ccc6d981.png": {
+   "size": 400055,
+   "stamp": "ccc6d981"
+  },
+  "img/icons_154e2fa9.png": {
+   "size": 95991,
+   "stamp": "154e2fa9"
+  },
+  "img/line_d9684f60.png": {
+   "size": 100,
+   "stamp": "d9684f60"
+  },
+  "img/noise_b6e30457.png": {
+   "size": 23083,
+   "stamp": "b6e30457"
+  },
+  "img/ring_1541da6c.png": {
+   "size": 6164,
+   "stamp": "1541da6c"
+  },
+  "img/shock_3531fe60.png": {
+   "size": 50464,
+   "stamp": "3531fe60"
+  },
+  "img/speedlines_64815646.png": {
+   "size": 256910,
+   "stamp": "64815646"
+  },
+  "img/vignette_94d218e2.png": {
+   "size": 15400,
+   "stamp": "94d218e2"
+  },
+  "img/wm_A_ace1a1fc.png": {
+   "size": 8890,
+   "stamp": "ace1a1fc"
+  },
+  "img/wm_B_e3ad8d5d.png": {
+   "size": 5646,
+   "stamp": "e3ad8d5d"
+  },
+  "img/wm_D_0312b32a.png": {
+   "size": 6025,
+   "stamp": "0312b32a"
+  },
+  "img/wm_E_f66e6465.png": {
+   "size": 1864,
+   "stamp": "f66e6465"
+  },
+  "img/wm_S_3daf2f74.png": {
+   "size": 10140,
+   "stamp": "3daf2f74"
+  },
+  "img/wm_hub_604a3cba.png": {
+   "size": 27701,
+   "stamp": "604a3cba"
+  },
+  "sfx/bh_click.ogg": {
+   "size": 4876,
+   "stamp": "3fd39a5b"
+  },
+  "sfx/bh_close.ogg": {
+   "size": 9915,
+   "stamp": "827837c5"
+  },
+  "sfx/bh_fly_land.ogg": {
+   "size": 40142,
+   "stamp": "9e0889fa"
+  },
+  "sfx/bh_fly_wind.ogg": {
+   "size": 108465,
+   "stamp": "fe17eb5d"
+  },
+  "sfx/bh_hover.ogg": {
+   "size": 5468,
+   "stamp": "bf7df59b"
+  },
+  "sfx/bh_open.ogg": {
+   "size": 9834,
+   "stamp": "3a6618eb"
+  },
+  "sfx/bh_saved.ogg": {
+   "size": 8968,
+   "stamp": "778f174a"
+  },
+  "sfx/bh_tab.ogg": {
+   "size": 7097,
+   "stamp": "2b9384b9"
+  },
+  "sfx/bh_toggle_off.ogg": {
+   "size": 6695,
+   "stamp": "f55696b4"
+  },
+  "sfx/bh_toggle_on.ogg": {
+   "size": 7369,
+   "stamp": "0fab2e62"
+  }
+ }
+}
