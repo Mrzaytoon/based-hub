@@ -9,9 +9,14 @@ per-game modules.
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Mrzaytoon/based-hub/main/loader.lua"))()
 ```
 
-The first run downloads the hub and the fonts, icons and sounds it uses (about 3 MB) into your
-executor's workspace and shows how far along it is. After that it starts straight away and only
-fetches what has changed. With no network it starts the build you already have.
+The first run downloads the hub, the fonts, icons and sounds it uses, and its intro film into
+your executor's workspace, and shows how far along it is: about 116 MB on a 1080p or larger
+screen, 48 MB on a smaller one, nearly all of it the film. After that there is no download and no
+download screen; it starts straight away and only fetches what has changed. With no network it
+starts the build you already have.
+
+The intro runs 19 seconds. **Space** skips it, and Settings can make it a quick one or switch it
+off.
 
 | Key | Does |
 | --- | --- |
