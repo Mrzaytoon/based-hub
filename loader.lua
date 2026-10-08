@@ -213,8 +213,13 @@ local function screen()
   end
   function view.progress(done, total, bytes, allBytes)
     view.goal = allBytes > 0 and bytes / allBytes or 1
-    count.Text = string.format("%d of %d files", done, total)
-    size.Text = string.format("%.1f of %.1f MB", bytes / 1e6, allBytes / 1e6)
+    count.Text = string.format("%d of %d %s", done, total, total == 1 and "file" or "files")
+    -- a small update is counted in kB: "0.0 of 0.0 MB" would say nothing
+    if allBytes < 1e6 then
+      size.Text = string.format("%d of %d kB", math.ceil(bytes / 1000), math.ceil(allBytes / 1000))
+    else
+      size.Text = string.format("%.1f of %.1f MB", bytes / 1e6, allBytes / 1e6)
+    end
   end
   -- something went wrong: say what, and wait for the button
   function view.ask(text, small)
