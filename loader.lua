@@ -3,7 +3,8 @@
 --   loadstring(game:HttpGet("https://raw.githubusercontent.com/Mrzaytoon/based-hub/main/loader.lua"))()
 --
 -- The first time, it fetches the hub, the files the hub draws with (fonts, icons, textures,
--- sounds) and the intro film, shows how far along it is, and starts the hub. After that there is
+-- sounds) and its two films (the intro, and the one on the Home tab), shows how far along it
+-- is, and starts the hub. After that there is
 -- no download and no download screen: it looks at what is already here, asks whether a newer
 -- build is out, fetches only what changed if one is, and starts the hub. With no network it
 -- starts the build that is already installed.
@@ -12,9 +13,10 @@
 -- and the folder BasedHub/, and never over the settings you saved there. The list of files is
 -- install.json on the main branch. It names one commit and every file is fetched from that
 -- commit, so a list and its files always belong together; each file is checked against the
--- size the list gives for it before it is written. The film is a few thousand frames, so it
--- comes as packs of frames (packs/*.pack) that are taken apart here, in the picture size that
--- suits the screen; the hub runs without it, so a film that does not arrive never stops a start.
+-- size the list gives for it before it is written. A film is a few thousand frames, so it
+-- comes as packs of frames (packs/*.pack) that are taken apart here, in the picture sizes that
+-- suit the screen; the hub runs without its films, so one that does not arrive never stops a
+-- start.
 local RAW = "https://raw.githubusercontent.com/Mrzaytoon/based-hub/"
 local ROOT, SCRIPT, LIST = "BasedHub", "BasedHub.lua", "install.json"
 local RECORD = ROOT .. "/cache/installed.json"
@@ -135,11 +137,14 @@ end
 -- ---------------------------------------------------------------- the film
 -- A pack is a run of numbered frames in one file: "BHPK1 <count>", a line of their sizes, then
 -- the frames one after another. The list says which frames a pack holds (prefix, from, to) and
--- they are only ever written inside the hub's film folder.
+-- they are only ever written inside the hub's two film folders.
+local function filmFolder(prefix)
+  return string.match(prefix, "^film/[%w_%-/]+$") ~= nil or string.match(prefix, "^board/[%w_%-/]+$") ~= nil
+end
 local function soundPack(pack)
   return type(pack) == "table" and type(pack.at) == "string" and string.match(pack.at, "^packs/[%w_%-]+%.pack$") ~= nil
     and type(pack.size) == "number" and type(pack.stamp) == "string"
-    and type(pack.prefix) == "string" and string.match(pack.prefix, "^film/[%w_%-/]+$") ~= nil and string.find(pack.prefix, "//", 1, true) == nil
+    and type(pack.prefix) == "string" and filmFolder(pack.prefix) and string.find(pack.prefix, "//", 1, true) == nil
     and type(pack.from) == "number" and type(pack.to) == "number" and pack.from % 1 == 0 and pack.to % 1 == 0
     and pack.from >= 0 and pack.to >= pack.from and pack.to - pack.from < 2000
     and type(pack.digits) == "number" and pack.digits % 1 == 0 and pack.digits >= 1 and pack.digits <= 8
@@ -184,15 +189,17 @@ local function unpack(pack, data)
   end
   return true
 end
--- What of the film is still to fetch, or nil when there is nothing: no film in the list, or it is
--- here. A film comes in several picture sizes and one is enough: a size that is here, or partly
--- here, is the one kept to; otherwise the first one the screen is tall enough for.
-local function filmPlan(list, record)
-  local film = list.film
+-- What of a film is still to fetch, or nil when there is nothing: no such film in the list, or
+-- it is here. A film comes in several picture sizes. Of the intro one size is enough: a size
+-- that is here, or partly here, is the one kept to; otherwise the first the screen is tall
+-- enough for. Of a film marked `all` (the one on the Home tab, which the hub shows small in its
+-- card and large when it opens) every size the screen is tall enough for is fetched.
+local function filmPlan(film, record, what)
   if type(film) ~= "table" or type(film.sets) ~= "table" then return nil end
   local camera = workspace.CurrentCamera
   local height = camera and camera.ViewportSize.Y or 1080
-  local kept, keptHave, fits
+  -- every size the list describes soundly, with what of it is missing here
+  local sizes = {}
   for _, set in ipairs(film.sets) do
     if type(set) == "table" and type(set.packs) == "table" and #set.packs > 0 then
       local missing, have, sound = {}, 0, true
@@ -203,22 +210,23 @@ local function filmPlan(list, record)
         end
         if packHere(pack, record) then have += 1 else missing[#missing + 1] = pack end
       end
-      if sound then
-        local this = { set = set, missing = missing }
-        if have > (keptHave or 0) then kept, keptHave = this, have end
-        if not fits and (tonumber(set.minHeight) or 0) <= height then fits = this end
-      end
+      if sound then sizes[#sizes + 1] = { set = set, missing = missing, have = have, fits = (tonumber(set.minHeight) or 0) <= height } end
     end
   end
-  local chosen = kept or fits
-  if not chosen then return nil end
-  -- The hub takes a film to be here when the first and the last frame of each strip are. So the
-  -- pack that opens each strip is fetched after everything else has arrived: half a film is then
-  -- never taken for a whole one.
-  local opens = {}
-  for _, pack in ipairs(chosen.set.packs) do
-    if opens[pack.prefix] == nil or pack.from < opens[pack.prefix] then opens[pack.prefix] = pack.from end
+  local chosen = {}
+  if film.all == true then
+    for _, this in ipairs(sizes) do
+      if this.fits or this.have > 0 then chosen[#chosen + 1] = this end
+    end
+  else
+    local kept, fits
+    for _, this in ipairs(sizes) do
+      if this.have > (kept and kept.have or 0) then kept = this end
+      if not fits and this.fits then fits = this end
+    end
+    chosen[1] = kept or fits
   end
+  if #chosen == 0 then return nil end
   local body, last, bytes = {}, {}, 0
   if type(film.files) == "table" then
     -- the plain files that go with it (its soundtrack)
@@ -227,12 +235,23 @@ local function filmPlan(list, record)
       bytes += item.size
     end
   end
-  local parts = #chosen.set.packs
-  for _, pack in ipairs(chosen.missing) do
-    local part = table.find(chosen.set.packs, pack) or 0
-    local item = { name = string.format("the intro film, part %d of %d", part, parts), from = pack.at, size = pack.size, pack = pack }
-    if pack.from == opens[pack.prefix] then last[#last + 1] = item else body[#body + 1] = item end
-    bytes += pack.size
+  local parts, before = 0, 0
+  for _, this in ipairs(chosen) do parts += #this.set.packs end
+  for _, this in ipairs(chosen) do
+    -- The hub takes a film to be here when the first and the last frame of each strip are. So the
+    -- pack that opens each strip is fetched after everything else has arrived: half a film is
+    -- then never taken for a whole one.
+    local opens = {}
+    for _, pack in ipairs(this.set.packs) do
+      if opens[pack.prefix] == nil or pack.from < opens[pack.prefix] then opens[pack.prefix] = pack.from end
+    end
+    for _, pack in ipairs(this.missing) do
+      local part = before + (table.find(this.set.packs, pack) or 0)
+      local item = { name = string.format("%s, part %d of %d", what, part, parts), from = pack.at, size = pack.size, pack = pack }
+      if pack.from == opens[pack.prefix] then last[#last + 1] = item else body[#body + 1] = item end
+      bytes += pack.size
+    end
+    before += #this.set.packs
   end
   if #body + #last == 0 then return nil end
   return { body = body, last = last, count = #body + #last, bytes = bytes }
@@ -348,16 +367,19 @@ local function screen()
 end
 
 -- ---------------------------------------------------------------- installing
--- Fetch what is missing: the hub's files, the hub, then the film. True when the hub and what it
+-- Fetch what is missing: the hub's files, the hub, then the films. True when the hub and what it
 -- draws with are in place (and with it the hub, compiled, when it was fetched), or false and
--- what went wrong. The third value is what went wrong with the film, when only that did: the
--- hub runs without it. What did arrive is kept, so another go fetches only the rest.
-local function bring(list, record, view, updating, film)
+-- what went wrong. The third value is the film that did not finish, when only a film failed:
+-- the hub runs without it. What did arrive is kept, so another go fetches only the rest.
+local function bring(list, record, view, updating, films)
   local base = RAW .. list.commit .. "/"
   local need, bytes = wanted(list, record)
   local hubToo = installedBuild() ~= list.build
-  local total = #need + (hubToo and 1 or 0) + (film and film.count or 0)
-  local allBytes = bytes + (hubToo and list.hub.size or 0) + (film and film.bytes or 0)
+  local total, allBytes = #need + (hubToo and 1 or 0), bytes + (hubToo and list.hub.size or 0)
+  for _, film in ipairs(films) do
+    total += film.plan.count
+    allBytes += film.plan.bytes
+  end
   local title = updating and "Updating the hub" or "Getting the hub ready"
   local done, got = 0, 0
   view.say(title, "")
@@ -430,12 +452,15 @@ local function bring(list, record, view, updating, film)
     got += list.hub.size
     view.progress(done, total, got, allBytes)
   end
-  -- and the film last: the hub is whole without it, so nothing that goes wrong from here stops it starting
-  if film then
-    view.say("Getting the intro film", "")
-    local trouble = run(film.body, "Getting the intro film") or run(film.last, "Getting the intro film")
-    if trouble then return true, chunk, trouble end
+  -- and the films last: the hub is whole without them, so nothing that goes wrong from here stops it starting
+  local unfinished
+  for _, film in ipairs(films) do
+    local saying = "Getting " .. film.name
+    view.say(saying, "")
+    local trouble = run(film.plan.body, saying) or run(film.plan.last, saying)
+    if trouble then unfinished = unfinished or film.name end
   end
+  if unfinished then return true, chunk, unfinished end
   view.progress(total, total, allBytes, allBytes)
   return true, chunk
 end
@@ -480,8 +505,14 @@ local function install()
     -- a list older than the build that is here (a cache that has not caught up, or a newer build of your own) changes nothing
     if list and build ~= nil and list.build < build then list = nil end
     -- already downloaded: nothing to fetch, nothing to show, the hub starts
-    local film = list ~= nil and filmPlan(list, record) or nil
-    local upToDate = list ~= nil and build == list.build and #wanted(list, record) == 0 and film == nil
+    local films = {}
+    if list then
+      for _, film in ipairs({ { key = "film", name = "the intro film" }, { key = "board", name = "the Home film" } }) do
+        film.plan = filmPlan(list[film.key], record, film.name)
+        if film.plan then films[#films + 1] = film end
+      end
+    end
+    local upToDate = list ~= nil and build == list.build and #wanted(list, record) == 0 and #films == 0
     if record.unsaved then saveRecord(record) end
     if installed and (not list or upToDate) then
       if view then view.close() end
@@ -491,11 +522,11 @@ local function install()
       view.ask("Could not reach the download", string.sub(tostring(why), 1, 70))
     else
       view = view or screen()
-      local ok, result, filmTrouble = bring(list, record, view, installed, film)
+      local ok, result, unfinished = bring(list, record, view, installed, films)
       if ok then
-        if filmTrouble then
+        if unfinished then
           -- the hub is whole: it starts, and the rest of the film is fetched the next time
-          view.say("The intro film did not finish", "It carries on the next time you run this")
+          view.say(string.upper(string.sub(unfinished, 1, 1)) .. string.sub(unfinished, 2) .. " did not finish", "It carries on the next time you run this")
           task.wait(1.6)
         else
           view.say("Starting", "")
