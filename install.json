@@ -1,9 +1,9 @@
 {
  "format": 1,
- "build": "20261008.2300",
- "commit": "70084e7dc48e35554e45ed82f0c629edcb2d7d6f",
+ "build": "20261010.1727",
+ "commit": "c19f9a88fa79242d13790b3efb291cbfd0eeebfd",
  "hub": {
-  "size": 516688
+  "size": 587157
  },
  "files": {
   "fonts/Archivo-ExpandedBlack.ttf": {
