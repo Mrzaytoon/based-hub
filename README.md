@@ -16,7 +16,9 @@ After that there is no download and no download screen; it starts straight away 
 what has changed. With no network it starts the build you already have.
 
 The intro runs 19 seconds. **Space** skips it, and Settings can make it a quick one or switch it
-off.
+off. The first time, you then pick which interface to use: **BASED** (glass and a sidebar),
+**Novoline** (a dock at the bottom, a panel that rises from it) or **Unnamed** (compact and
+classic). Settings › Menu style changes it any time.
 
 | Key | Does |
 | --- | --- |
@@ -35,7 +37,14 @@ can be changed in the hub (Keys tab, or right-click a toggle).
   noclip, click teleport, and a void that cannot kill you.
 - **Players**: watch, teleport to, and mark players as friends, targets or hidden.
 - **Server**: rejoin, hop, FPS cap.
-- **Keys** and **Settings**: every key on a keyboard you can click, themes, scale, configs.
+- **Music**: search SoundCloud and Audius, play your own files or a link; queue, likes, playlists,
+  history, sound shaping, and a mini player while the hub is hidden.
+- **You**: headless, a Korblox leg, a body material, an aura, footstep effects; bloom, colour grade,
+  sun rays and blur. Only you see them.
+- **Da Hood**: a ragebot, supplies, bounty hunting, Bring, a combat tab, a skin changer, cash, and
+  more, in tabs of their own.
+- **Keys** and **Settings**: every key on a keyboard you can click, themes, scale, configs, and share
+  codes that give someone else your whole setup.
 
 ## Settings
 
