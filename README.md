@@ -38,7 +38,10 @@ can be changed in the hub (Keys tab, or right-click a toggle).
 - **Players**: watch, teleport to, and mark players as friends, targets or hidden.
 - **Server**: rejoin, hop, FPS cap.
 - **Music**: search SoundCloud and Audius, play your own files or a link; queue, likes, playlists,
-  history, sound shaping, and a mini player while the hub is hidden.
+  history, sound shaping. Lyrics in time, word by word; a player on screen (tap the cover: big or
+  small) in the colours of each cover, and an island at the top with the line being sung. **Music on
+  this PC**: see and control Spotify, Apple Music or a browser from the game (Music › Set up, then
+  Win+R, paste, Enter).
 - **You**: headless, a Korblox leg, a body material, an aura, footstep effects; bloom, colour grade,
   sun rays and blur. Only you see them.
 - **Da Hood**: a ragebot, supplies, bounty hunting, Bring, a combat tab, a skin changer, cash, and
