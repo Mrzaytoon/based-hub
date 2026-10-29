@@ -9,14 +9,16 @@ per-game modules.
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Mrzaytoon/based-hub/main/loader.lua"))()
 ```
 
-The first run downloads the hub, the fonts, icons and sounds it uses, and its two films (the
-intro, and the one on the Home tab) into your executor's workspace, and shows how far along it
-is: about 159 MB on a 1080p or larger screen, 61 MB on a smaller one, nearly all of it the films.
-After that there is no download and no download screen; it starts straight away and only fetches
-what has changed. With no network it starts the build you already have.
+The first run downloads the hub, the fonts, icons and sounds it uses, and its films (the intros,
+and the one on the Home tab) into your executor's workspace, and shows how far along it is: about
+925 MB on a 1080p or larger screen, 390 MB on a smaller one, nearly all of it the films (the
+intro you start on comes first). After that there is no download and no download screen; it starts
+straight away and only fetches what has changed, a new film included. With no network it starts
+the build you already have.
 
-The intro runs 19 seconds. **Space** skips it, and Settings can make it a quick one or switch it
-off. The first time, you then pick which interface to use: **BASED** (glass and a sidebar),
+The intro is the BASED brand film (10 seconds). **Space** skips it, and Settings › Intro picks
+another (Invincible, Just use BASED, Prates, Neverlose vs BASED, Cinematic, Signal, Shuffle), a
+quick one, or none. The first time, you then pick which interface to use: **BASED** (glass and a sidebar),
 **Novoline** (a dock at the bottom, a panel that rises from it) or **Unnamed** (compact and
 classic). Settings › Menu style changes it any time.
 
@@ -44,7 +46,9 @@ can be changed in the hub (Keys tab, or right-click a toggle).
   Win+R, paste, Enter).
 - **You**: headless, a Korblox leg, a body material, an aura, footstep effects; bloom, colour grade,
   sun rays and blur. Only you see them.
-- **Da Hood**: a ragebot, supplies, bounty hunting, Bring, a combat tab, a skin changer, cash, and
+- **Da Hood**: a ragebot, supplies, bounty hunting, Bring, a combat tab (one tap with shotguns, a
+  shot guard that never wastes a bullet, rapid fire at the server's pace, fake spam), a skin
+  changer for every gun and the knife with each skin's own shot, swing and equip sounds, cash, and
   more, in tabs of their own.
 - **Keys** and **Settings**: every key on a keyboard you can click, themes, scale, configs, and share
   codes that give someone else your whole setup.

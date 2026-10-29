@@ -140,7 +140,7 @@ end
 -- they are only ever written inside the hub's two film folders.
 local function filmFolder(prefix)
   -- (one folder per film: a pack is only ever unpacked into one of them)
-  for _, folder in ipairs({ "film", "board", "reel" }) do
+  for _, folder in ipairs({ "film", "board", "reel", "lock", "prates", "brand", "richard" }) do
     if string.match(prefix, "^" .. folder .. "/[%w_%-/]+$") ~= nil then return true end
   end
   return false
@@ -511,7 +511,10 @@ local function install()
     -- already downloaded: nothing to fetch, nothing to show, the hub starts
     local films = {}
     if list then
-      for _, film in ipairs({ { key = "film", name = "the intro film" }, { key = "board", name = "the Home film" }, { key = "reel", name = "the Invincible intro" } }) do
+      -- (the brand film first: it is the intro everyone starts on, so it is the one most wanted here)
+      for _, film in ipairs({ { key = "brand", name = "the brand intro" }, { key = "film", name = "the intro film" }, { key = "board", name = "the Home film" },
+        { key = "reel", name = "the Invincible intro" }, { key = "lock", name = "the Just use BASED intro" }, { key = "prates", name = "the Prates intro" },
+        { key = "richard", name = "the Neverlose vs BASED intro" } }) do
         film.plan = filmPlan(list[film.key], record, film.name)
         if film.plan then films[#films + 1] = film end
       end
