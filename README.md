@@ -46,7 +46,9 @@ can be changed in the hub (Keys tab, or right-click a toggle).
   Win+R, paste, Enter).
 - **You**: headless, a Korblox leg, a body material, an aura, footstep effects; bloom, colour grade,
   sun rays and blur. Only you see them.
-- **Da Hood**: a ragebot, supplies, bounty hunting, Bring, a combat tab (one tap with shotguns, a
+- **Da Hood**: a ragebot (the Destroyer preset does it all at once: head shots, a trap at the armour
+  pads, and a sky sniper that hits a bot hiding in the sky where it goes next), supplies, bounty
+  hunting, Bring, a combat tab (one tap with shotguns, a
   shot guard that never wastes a bullet, rapid fire at the server's pace, fake spam), a target
   strafe that hops round them while you see a clone stand still, Desync (your body gone, you play
   its clone), an auto block nobody sees, a skin changer for every gun and the knife with each
