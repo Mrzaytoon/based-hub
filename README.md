@@ -34,30 +34,40 @@ can be changed in the hub (Keys tab, or right-click a toggle).
 
 - **Combat**: aim assist with its own field of view, smoothing, lead and target rules; a triggerbot.
 - **Visuals**: player ESP (boxes, names, health, distance, skeletons, off-screen arrows) out to
-  any range, a crosshair, lighting.
+  any range, steady on the body and never switching itself off, with looks of its own (Clean, Pro,
+  Neon, Minimal, Classic), a font and boxes that fade out; a crosshair; lighting, an ambient colour,
+  exposure, a fog colour, no shadows, and a plain world for more frames.
 - **Movement**: animated flight from a charged launch up through the sound barrier, speed, jump,
-  noclip, click teleport, and a void that cannot kill you.
+  noclip, click teleport, anti trip, no player collisions (nobody can push or fling you), and a void
+  that cannot kill you.
 - **Players**: watch, teleport to, and mark players as friends, targets or hidden.
 - **Server**: rejoin, hop, FPS cap.
 - **Music**: search SoundCloud and Audius, play your own files or a link; queue, likes, playlists,
   history, sound shaping. Lyrics in time, word by word; a player on screen (tap the cover: big or
-  small) in the colours of each cover, and an island at the top with the line being sung. **Music on
-  this PC**: see and control Spotify, Apple Music or a browser from the game (Music › Set up, then
-  Win+R, paste, Enter).
-- **You**: headless, a Korblox leg, a body material, an aura, footstep effects; bloom, colour grade,
-  sun rays and blur. Only you see them.
+  small) in the colours of each cover, and an island at the top with the line being sung. Skip to any
+  part and it plays from exactly there. **Mute the game**: only the music and the menu are heard (or
+  turn the game down to any level). **Music on this PC**: see and control Spotify, Apple Music or a
+  browser from the game (Music › Set up, then Win+R, paste, Enter).
+- **You**: headless, a Korblox leg, a body material, a body colour or a rainbow, see-through, hats and
+  clothes off, a trail, a glow outline, an aura, footstep effects; picture looks (Cinematic, Warm, Cold,
+  Noir, Vapor, Vivid), bloom, colour grade, sun rays, blur, motion blur and depth of field. Only you see
+  them.
 - **Da Hood**: a ragebot (the Destroyer preset does it all at once: head shots, a trap at the armour
   pads, and a sky sniper that hits a bot hiding in the sky where it goes next; and Press, which goes
   after a bot hiding in the void at the spot it keeps coming back to, however seldom, or round your
   own trail when it follows you, and backs off the moment it is hurt; a bot that comes out onto you is
   knocked as it arrives, one buying from under the floor is shot from beside it, and one whose double tap
   hits you is struck back at before its second shot lands; with a bot about that hunts you, trips to the
-  shop wait until it is down), supplies, bounty
-  hunting, Bring, a combat tab (one tap with shotguns, a
-  shot guard that never wastes a bullet, rapid fire at the server's pace, fake spam), a target
-  strafe that hops round them while you see a clone stand still, Desync (your body gone, you play
-  its clone), an auto block nobody sees, a skin changer for every gun and the knife with each
-  skin's own shot, swing and equip sounds, cash, and more, in tabs of their own.
+  shop wait until it is down; a ring lure for a bot that follows you from a set way off; a view that
+  stays locked on its target; every resolver number on a Resolver tab), supplies, bounty
+  hunting, Bring, a combat tab (one tap with shotguns, bullet manipulation that lands your shots on
+  whoever the aim help has, through walls, Double tap, a triggerbot, sticky aim with a lasso, a shot
+  guard that never wastes a bullet, rapid fire at the server's full rate with fake tracers between
+  (the AUG at 20 a second), and fake spam that sends real bullets when you are in reach), Speed
+  (your walk speed times a multiplier, up to 100x), a target strafe that hops round them while you
+  see a clone stand still, Desync (your body gone, you play its clone), an auto block nobody sees, a
+  skin changer for every gun and the knife with each skin's own shot, swing and equip sounds, cash,
+  scores for every player, and more, in tabs of their own.
 - **Keys** and **Settings**: every key on a keyboard you can click, themes, scale, configs, and share
   codes that give someone else your whole setup.
 
