@@ -49,8 +49,10 @@ can be changed in the hub (Keys tab, or right-click a toggle).
 - **Da Hood**: a ragebot (the Destroyer preset does it all at once: head shots, a trap at the armour
   pads, and a sky sniper that hits a bot hiding in the sky where it goes next; and Press, which goes
   after a bot hiding in the void at the spot it keeps coming back to, however seldom, or round your
-  own trail when it follows you, and backs off the moment it is hurt; with a bot about that hunts you,
-  trips to the shop wait until it is down), supplies, bounty
+  own trail when it follows you, and backs off the moment it is hurt; a bot that comes out onto you is
+  knocked as it arrives, one buying from under the floor is shot from beside it, and one whose double tap
+  hits you is struck back at before its second shot lands; with a bot about that hunts you, trips to the
+  shop wait until it is down), supplies, bounty
   hunting, Bring, a combat tab (one tap with shotguns, a
   shot guard that never wastes a bullet, rapid fire at the server's pace, fake spam), a target
   strafe that hops round them while you see a clone stand still, Desync (your body gone, you play
