@@ -64,7 +64,7 @@ can be changed in the hub (Keys tab, or right-click a toggle).
   whoever the aim help has, through walls, Double tap, a triggerbot, sticky aim with a lasso, a shot
   guard that never wastes a bullet, rapid fire at the server's full rate with fake tracers between
   (the AUG at 20 a second), and fake spam that sends real bullets when you are in reach), Speed
-  (your walk speed times a multiplier, up to 100x), a target strafe that hops round them while you
+  (carried along as you walk, up to 400 studs a second), a target strafe that hops round them while you
   see a clone stand still, Desync (your body gone, you play its clone), an auto block nobody sees, a
   skin changer for every gun and the knife with each skin's own shot, swing and equip sounds, cash,
   scores for every player, and more, in tabs of their own.
