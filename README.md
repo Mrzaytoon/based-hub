@@ -34,7 +34,7 @@ can be changed in the hub (Keys tab, or right-click a toggle).
 
 - **Combat**: aim assist with its own field of view, smoothing, lead and target rules; a triggerbot.
 - **Visuals**: player ESP (boxes, names, health, distance, skeletons, off-screen arrows) out to
-  any range, locked on the body at any speed and never switching itself off, with looks of its own (Clean, Pro,
+  any range, locked on the body at any speed (deep in the void too) and never switching itself off, with looks of its own (Clean, Pro,
   Neon, Minimal, Classic), a font and boxes that fade out; a crosshair; lighting, an ambient colour,
   exposure, a fog colour, no shadows, and a plain world for more frames.
 - **Movement**: animated flight from a charged launch up through the sound barrier, speed, jump,
@@ -59,7 +59,7 @@ can be changed in the hub (Keys tab, or right-click a toggle).
   knocked as it arrives, one buying from under the floor is shot from beside it, and one whose double tap
   hits you is struck back at before its second shot lands; with a bot about that hunts you, trips to the
   shop wait until it is down; a ring lure for a bot that follows you from a set way off; a view locked
-  on its target however fast it goes, and your own body lit while it hunts so you always see where you
+  on its target however fast it goes, into the void too, and your own body lit while it hunts so you always see where you
   are; every resolver number on a Resolver tab), supplies, bounty
   hunting, Bring, a combat tab (one tap with shotguns, bullet manipulation that lands your shots on
   whoever the aim help has, through walls, Double tap, a triggerbot, sticky aim with a lasso, a shot
