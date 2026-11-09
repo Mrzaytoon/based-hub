@@ -11,14 +11,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Mrzaytoon/based-hub/m
 
 The first run downloads the hub, the fonts, icons and sounds it uses, and its films (the intros,
 and the one on the Home tab) into your executor's workspace, and shows how far along it is: about
-940 MB on a 1080p or larger screen, 390 MB on a smaller one, nearly all of it the films (the
+520 MB on a 1080p or larger screen, 220 MB on a smaller one, nearly all of it the films (the
 intro you start on comes first). After that there is no download and no download screen; it starts
 straight away and only fetches what has changed, a new film included. With no network it starts
 the build you already have.
 
-The intro is the BASED brand film (10 seconds). **Space** skips it, and Settings › Intro picks
-another (Invincible, Just use BASED, Prates, Neverlose vs BASED, Cinematic, Signal, Shuffle), a
-quick one, or none. The first time, you then pick which interface to use: **BASED** (glass and a sidebar),
+The intro is the BASED lotion ad (11 seconds). **Space** skips it, and Settings › Intro picks
+another (the BASED brand film, Neverlose vs BASED, Cinematic, Shuffle), a quick one, or none.
+The first time, you then pick which interface to use: **BASED** (glass and a sidebar),
 **Novoline** (a dock at the bottom, a panel that rises from it) or **Unnamed** (compact and
 classic). Settings › Menu style changes it any time.
 
@@ -61,7 +61,10 @@ can be changed in the hub (Keys tab, or right-click a toggle).
   shop wait until it is down; a ring lure for a bot that follows you from a set way off; a view locked
   on its target however fast it goes, into the void too, and your own body lit while it hunts so you always see where you
   are; every resolver number on a Resolver tab; and Beat BASED bots, traps for a bot that runs this hub
-  itself: its own pounce, its lures and your spawn shield turned against it), supplies, bounty
+  itself: its own pounce, its lures and your spawn shield turned against it; Anti rep root, which finds a
+  body glued to yours and shoots it point-blank; Unmask, for one drawn away from where its shots come
+  from; and a resolver that learns how far ahead to aim, off as it ships), a Sigil on your body (styles,
+  symbols and palettes to pick) and damage numbers that tick up where you hit, supplies, bounty
   hunting, Bring, a combat tab (one tap with shotguns, bullet manipulation that lands your shots on
   whoever the aim help has, through walls, Double tap, a triggerbot, sticky aim with a lasso, a shot
   guard that never wastes a bullet, rapid fire at the server's full rate with fake tracers between
