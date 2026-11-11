@@ -73,6 +73,13 @@ can be changed in the hub (Keys tab, or right-click a toggle).
   see a clone stand still, Desync (your body gone, you play its clone), an auto block nobody sees, a
   skin changer for every gun and the knife with each skin's own shot, swing and equip sounds, cash,
   scores for every player, and more, in tabs of their own.
+- **GloryBound**: an auto farm, in tabs of its own. It lifts at a free barbell at the pace the game
+  itself counts, is reborn at the shrine when Strength is capped, queues Survival runs (with a team or
+  alone) and fights them (swings at whatever is in reach, shield up as each blow lands, out of the arrow
+  storm, a boon picked by what you want from it), opens the chests it wins, wears the better blade and
+  piece, claims the daily gift, quests and free spins, and comes back by itself after every match. One
+  button switches the whole farm on and one switches it off; nothing that spends cash, skill points or
+  Robux is ever switched on for you.
 - **Keys** and **Settings**: every key on a keyboard you can click, themes, scale, configs, and share
   codes that give someone else your whole setup.
 
