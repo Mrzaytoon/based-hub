@@ -18,9 +18,8 @@ the build you already have.
 
 The intro is the BASED lotion ad (11 seconds). **Space** skips it, and Settings › Intro picks
 another (the BASED brand film, Neverlose vs BASED, Cinematic, Shuffle), a quick one, or none.
-The first time, you then pick which interface to use: **BASED** (glass and a sidebar),
-**Novoline** (a dock at the bottom, a panel that rises from it) or **Unnamed** (compact and
-classic). Settings › Menu style changes it any time.
+The interface is **BASED**: glass and a sidebar. (The Novoline and Unnamed interfaces are out of
+this build for now, so the hub is lighter and the menu as fast as it can be.)
 
 | Key | Does |
 | --- | --- |
