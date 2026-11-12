@@ -79,6 +79,17 @@ can be changed in the hub (Keys tab, or right-click a toggle).
   piece, claims the daily gift, quests and free spins, and comes back by itself after every match. One
   button switches the whole farm on and one switches it off; nothing that spends cash, skill points or
   Robux is ever switched on for you.
+- **Attack on Titan Revolution**: an auto farm, in four tabs of its own (Farm, Blade, Titans, Missions).
+  It puts you behind each titan at once and cuts the nape with the game's own swing at full damage: a
+  whole Easy mission of 18 titans was cleared in 17 seconds, hands off. It never works the same spot
+  twice (a cut that is not heard comes from another side next, on another titan first), keeps the blade
+  supplied (a new set before the last segment, a gas tank when the sets are gone), breaks out of grabs
+  for you, and asks for the next mission when one ends. Every few missions it goes home, buys gear
+  upgrades with the gold it earned and takes the hardest mission that unlocked: from a new account it
+  went from Easy to Hard by itself in under an hour. Boxes on every nape if you want them, and it starts
+  itself again, minimised, after every teleport. It needs an executor with `run_on_actor`. One button
+  for the whole farm, one to stop; gold is spent on gear upgrades only, and nothing is ever bought with
+  Robux.
 - **Keys** and **Settings**: every key on a keyboard you can click, themes, scale, configs, and share
   codes that give someone else your whole setup.
 
