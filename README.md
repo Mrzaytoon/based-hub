@@ -90,6 +90,17 @@ can be changed in the hub (Keys tab, or right-click a toggle).
   itself again, minimised, after every teleport. It needs an executor with `run_on_actor`. One button
   for the whole farm, one to stop; gold is spent on gear upgrades only, and nothing is ever bought with
   Robux.
+- **Blox Fruits**: an auto farm in tabs of its own, a first release. Auto level takes the quest worth
+  most from the game's own tables, fights its mobs from above (it never goes down among them), hands
+  the quest in and flies to the next island when a better one opens, through the game's own whirlpool
+  where there is one: one account went from level 1 to 490, hands off. Stat points by a plan of your
+  own, haki kept on, abilities bought as Beli allows, fruits fetched and stored (you choose which ones
+  it goes for), chests between fights,
+  the Saber quest done from start to end, and an Autopilot that runs all of it with one switch. A watch
+  over every job puts a stalled one right by itself. More is built and not yet proven on the live game:
+  bosses, raids, the sea, races, the fruit dealers and the trip to the Second Sea. In this game only
+  Visuals is kept from the tools above. Every switch is off by default, and nothing is ever bought with
+  Robux.
 - **Keys** and **Settings**: every key on a keyboard you can click, themes, scale, configs, and share
   codes that give someone else your whole setup.
 
