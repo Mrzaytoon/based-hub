@@ -1,9 +1,9 @@
 {
  "format": 1,
- "build": "20261113.1715",
- "commit": "2fcb9fc10deff284bd1b129b3fe32c366813501c",
+ "build": "20261115.0210",
+ "commit": "4267d807b42b9b7f9e1f8a4a5d7033ec1af8b46f",
  "hub": {
-  "size": 3155909
+  "size": 3531223
  },
  "files": {
   "fonts/Archivo-ExpandedBlack.ttf": {
@@ -98,9 +98,9 @@
    "size": 400055,
    "stamp": "ccc6d981"
   },
-  "img/icons_aed91083.png": {
-   "size": 101469,
-   "stamp": "aed91083"
+  "img/icons_1fa63544.png": {
+   "size": 115312,
+   "stamp": "1fa63544"
   },
   "img/line_d9684f60.png": {
    "size": 100,
