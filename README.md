@@ -18,8 +18,8 @@ the build you already have.
 
 The intro is the BASED lotion ad (11 seconds). **Space** skips it, and Settings › Intro picks
 another (the BASED brand film, Neverlose vs BASED, Cinematic, Shuffle), a quick one, or none.
-The interface is **BASED**: glass and a sidebar. (The Novoline and Unnamed interfaces are out of
-this build for now, so the hub is lighter and the menu as fast as it can be.)
+The interface is **BASED**: glass and a sidebar. A second one, **Unnamed** (the dark two-column
+menu), has the same tabs and settings: Settings › Menu style, or the menu at the window's top.
 
 | Key | Does |
 | --- | --- |
@@ -33,9 +33,12 @@ can be changed in the hub (Keys tab, or right-click a toggle).
 
 - **Combat**: aim assist with its own field of view, smoothing, lead and target rules; a triggerbot.
 - **Visuals**: player ESP (boxes, names, health, distance, skeletons, off-screen arrows) out to
-  any range, locked on the body at any speed (deep in the void too) and never switching itself off, with looks of its own (Clean, Pro,
-  Neon, Minimal, Classic), a font and boxes that fade out; a crosshair; lighting, an ambient colour,
-  exposure, a fog colour, no shadows, and a plain world for more frames.
+  any range, locked on the body at any speed (deep in the void too) and never switching itself off. It is
+  drawn the Unnamed way as it comes (a thin box with a dark edge, gradients across the box, the fill and the
+  words, a health bar that eases, flags, chams, a body's own look changed) or the hub's own way, with looks
+  in one click (Unnamed, Unnamed glow, Clean, Pro, Neon, Minimal, Classic); a box never blows up when a body
+  is knocked or broken apart. A crosshair; lighting, an atmosphere, an ambient colour, exposure, a fog
+  colour, no shadows, and a plain world for more frames.
 - **Movement**: animated flight from a charged launch up through the sound barrier, speed, jump,
   noclip, click teleport, anti trip, no player collisions (nobody can push or fling you), and a void
   that cannot kill you.
@@ -70,8 +73,11 @@ can be changed in the hub (Keys tab, or right-click a toggle).
   (the AUG at 20 a second), and fake spam that sends real bullets when you are in reach), Speed
   (carried along as you walk, up to 400 studs a second), a target strafe that hops round them while you
   see a clone stand still, Desync (your body gone, you play its clone), an auto block nobody sees, a
-  skin changer for every gun and the knife with each skin's own shot, swing and equip sounds, cash,
-  scores for every player, and more, in tabs of their own.
+  skin changer for every gun and the knife with each skin's own animations and its shot, swing and equip sounds (a knife is
+  held the way the game holds it, and the butterfly knives flip open every time you pull them out), a
+  whitelist nothing of yours can hurt (fists, knife, throwables, blasts and stomps are all held back),
+  Noclip, anti stomp and an auto stomp that keeps stomping, cash, scores for every player, and more, in
+  tabs of their own.
 - **GloryBound**: an auto farm, in tabs of its own. It lifts at a free barbell at the pace the game
   itself counts, is reborn at the shrine when Strength is capped, queues Survival runs (with a team or
   alone) and fights them (swings at whatever is in reach, shield up as each blow lands, out of the arrow
@@ -102,7 +108,8 @@ can be changed in the hub (Keys tab, or right-click a toggle).
   Visuals is kept from the tools above. Every switch is off by default, and nothing is ever bought with
   Robux.
 - **Keys** and **Settings**: every key on a keyboard you can click, themes, scale, configs, and share
-  codes that give someone else your whole setup.
+  codes that give someone else your whole setup exactly as it runs (a code that was cut short or damaged
+  in a paste says so).
 
 Rest the mouse on any control and it says what it does.
 
