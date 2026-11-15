@@ -107,6 +107,15 @@ can be changed in the hub (Keys tab, or right-click a toggle).
   bosses, raids, the sea, races, the fruit dealers and the trip to the Second Sea. In this game only
   Visuals is kept from the tools above. Every switch is off by default, and nothing is ever bought with
   Robux.
+- **Throw Food For Animals**: an auto farm in tabs of its own. Every throw is a perfect one, with none
+  of the cinematic, and it trains at your bar in between, choosing which by what the next throw is
+  likely to bring and by how close the next area is. A better catch takes the place of your weakest
+  animal by itself, and the rest are sold (you say which mutations and rarities to keep). Food, bars
+  and the fence are bought cheapest first, food only when it helps where you land, with a reserve if
+  you want one. It can aim short at the animals your index is missing, claims the free animal, offline
+  earnings and index rewards, wears your best trail, and keeps you in the server past the game's own
+  18-minute idle move. One account went from level 13 to 260 in about 80 minutes. Every switch is off
+  by default, and nothing is ever bought with Robux.
 - **Keys** and **Settings**: every key on a keyboard you can click, themes, scale, configs, and share
   codes that give someone else your whole setup exactly as it runs (a code that was cut short or damaged
   in a paste says so).
