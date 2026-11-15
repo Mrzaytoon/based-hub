@@ -116,6 +116,13 @@ can be changed in the hub (Keys tab, or right-click a toggle).
   earnings and index rewards, wears your best trail, and keeps you in the server past the game's own
   18-minute idle move. One account went from level 13 to 260 in about 80 minutes. Every switch is off
   by default, and nothing is ever bought with Robux.
+- **BloxStrike**: an ESP and aim help in tabs of their own. Boxes sit on each body in the frame the game
+  draws it, through walls and at any range, red in the open and violet behind cover, with health, armour,
+  money, kit and the gun in hand; once the game hides an enemy, a dim box stays where it was last seen;
+  arrows point to enemies off screen; an enemy panel and the bomb's timer. A triggerbot that fires the way
+  the gun in your hand fires (held for automatics, tapped at the gun's own rate for pistols, snipers and
+  shotguns, only within the weapon's range, never with a grenade or the bomb), and an aim assist with an
+  FOV circle. Every switch is off by default.
 - **Keys** and **Settings**: every key on a keyboard you can click, themes, scale, configs, and share
   codes that give someone else your whole setup exactly as it runs (a code that was cut short or damaged
   in a paste says so).
