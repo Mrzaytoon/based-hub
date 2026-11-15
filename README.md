@@ -82,9 +82,13 @@ can be changed in the hub (Keys tab, or right-click a toggle).
   itself counts, is reborn at the shrine when Strength is capped, queues Survival runs (with a team or
   alone) and fights them (swings at whatever is in reach, shield up as each blow lands, out of the arrow
   storm, a boon picked by what you want from it), opens the chests it wins, wears the better blade and
-  piece, claims the daily gift, quests and free spins, and comes back by itself after every match. One
-  button switches the whole farm on and one switches it off; nothing that spends cash, skill points or
-  Robux is ever switched on for you.
+  piece, claims the daily gift, quests and free spins, and comes back by itself after every match. In a
+  fight it answers only the blows aimed at it, keeps each kit at its best distance, dashes out of a boss's
+  leap the moment its landing is set, and walks round anything in its way; it pushes the chariot while it
+  fights off the mobs, grabs the treasure purses before the thieves, holds the Emperor's eye, goes for its
+  rival and the champion, skips the breaks and the boss's entrance, retries straight into the next run, and
+  stays minimised after every teleport. One button switches the whole farm on and one switches it off;
+  nothing that spends cash, skill points or Robux is ever switched on for you.
 - **Attack on Titan Revolution**: an auto farm, in four tabs of its own (Farm, Blade, Titans, Missions).
   It puts you behind each titan at once and cuts the nape with the game's own swing at full damage: a
   whole Easy mission of 18 titans was cleared in 17 seconds, hands off. It never works the same spot
