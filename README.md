@@ -84,7 +84,8 @@ can be changed in the hub (Keys tab, or right-click a toggle).
   storm, a boon picked by what you want from it), opens the chests it wins, wears the better blade and
   piece, claims the daily gift, quests and free spins, and comes back by itself after every match. In a
   fight it answers only the blows aimed at it, keeps each kit at its best distance, dashes out of a boss's
-  leap the moment its landing is set (and keeps a dash for it while a champion is out), steps out of a
+  leap the moment its landing is set (and keeps a dash for it while a champion is out, away from the
+  champion's side, then waits outside until it lands), keeps its spear out of a champion's reach, steps out of a
   breath while it burns, never dodges into the wall, puts its own life before the round when it is low,
   and walks round anything in its way; it pushes the chariot while it
   fights off the mobs, grabs the treasure purses before the thieves, holds the Emperor's eye, goes for its
