@@ -89,7 +89,8 @@ can be changed in the hub (Keys tab, or right-click a toggle).
   breath while it burns, never dodges into the wall, puts its own life before the round when it is low,
   and walks round anything in its way; it pushes the chariot while it
   fights off the mobs, grabs the treasure purses before the thieves, holds the Emperor's eye, goes for its
-  rival and the champion, skips the breaks and the boss's entrance, retries straight into the next run, and
+  rival and the champion, skips the breaks and the boss's entrance, answers the nightmare gate after round 60
+  for you (Descend, Claim, or leave it to you), retries straight into the next run, and
   stays minimised after every teleport. One button switches the whole farm on and one switches it off;
   nothing that spends cash, skill points or Robux is ever switched on for you.
 - **Attack on Titan Revolution**: an auto farm, in four tabs of its own (Farm, Blade, Titans, Missions).
