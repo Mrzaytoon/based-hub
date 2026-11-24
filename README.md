@@ -54,30 +54,7 @@ can be changed in the hub (Keys tab, or right-click a toggle).
   clothes off, a trail, a glow outline, an aura, footstep effects; picture looks (Cinematic, Warm, Cold,
   Noir, Vapor, Vivid), bloom, colour grade, sun rays, blur, motion blur and depth of field. Only you see
   them.
-- **Da Hood**: a ragebot (the Destroyer preset does it all at once: head shots, a trap at the armour
-  pads, and a sky sniper that hits a bot hiding in the sky where it goes next; and Press, which goes
-  after a bot hiding in the void at the spot it keeps coming back to, however seldom, or round your
-  own trail when it follows you, and backs off the moment it is hurt; a bot that comes out onto you is
-  knocked as it arrives, one buying from under the floor is shot from beside it, and one whose double tap
-  hits you is struck back at before its second shot lands; with a bot about that hunts you, trips to the
-  shop wait until it is down; a ring lure for a bot that follows you from a set way off; a view locked
-  on its target however fast it goes, into the void too, and your own body lit while it hunts so you always see where you
-  are; every resolver number on a Resolver tab; and Beat BASED bots, traps for a bot that runs this hub
-  itself: its own pounce, its lures and your spawn shield turned against it; Anti rep root, which finds a
-  body glued to yours and shoots it point-blank; Unmask, for one drawn away from where its shots come
-  from; and a resolver that learns how far ahead to aim, off as it ships), a Sigil on your body (styles,
-  symbols and palettes to pick) and damage numbers that tick up where you hit, supplies, bounty
-  hunting, Bring, a combat tab (one tap with shotguns, bullet manipulation that lands your shots on
-  whoever the aim help has, through walls, Double tap, a triggerbot, sticky aim with a lasso, a shot
-  guard that never wastes a bullet, rapid fire at the server's full rate with fake tracers between
-  (the AUG at 20 a second), and fake spam that sends real bullets when you are in reach), Speed
-  (carried along as you walk, up to 400 studs a second), a target strafe that hops round them while you
-  see a clone stand still, Desync (your body gone, you play its clone), an auto block nobody sees, a
-  skin changer for every gun and the knife with each skin's own animations and its shot, swing and equip sounds (a knife is
-  held the way the game holds it, and the butterfly knives flip open every time you pull them out), a
-  whitelist nothing of yours can hurt (fists, knife, throwables, blasts and stomps are all held back),
-  Noclip, anti stomp and an auto stomp that keeps stomping, cash, scores for every player, and more, in
-  tabs of their own.
+- **Da Hood**: locked for now.
 - **GloryBound**: an auto farm, in tabs of its own. It lifts at a free barbell at the pace the game
   itself counts, is reborn at the shrine when Strength is capped, queues Survival runs (with a team or
   alone) and fights them (swings at whatever is in reach, shield up as each blow lands, out of the arrow
