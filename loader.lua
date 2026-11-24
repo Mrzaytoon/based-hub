@@ -25,6 +25,22 @@ local WORKERS, TRIES = 4, 3
 local PATIENCE = 4        -- seconds an installed hub waits to hear whether a newer build is out
 local YOURS = { ["prefs.json"] = true, config = true, cache = true }      -- never fetched over
 
+-- Games locked for now (2026-11-24, the owner's word): in one of these this fetches, writes and starts nothing, and says so.
+-- Every other game, and Universal, as before. To open one again, take its line out and push.
+local LOCKED = {
+  [1008451066] = "Da Hood",      -- the universe (game.GameId): every place of it
+}
+do
+  local name = LOCKED[game.GameId]
+  if name then
+    warn("BASED Hub: " .. name .. " is locked for now.")
+    pcall(function()
+      game:GetService("StarterGui"):SetCore("SendNotification", { Title = "BASED Hub", Text = name .. " is locked for now. Every other game still works.", Duration = 8 })
+    end)
+    return
+  end
+end
+
 local genv = (type(getgenv) == "function" and getgenv()) or _G
 if genv.BASED_INSTALLING then return end
 genv.BASED_INSTALLING = true
